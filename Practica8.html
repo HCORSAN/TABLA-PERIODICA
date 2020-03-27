@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Practica 8 y Cuarentena</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style type="text/css">
+    .sinclasificacion{background-color: orangered; width: 90px; height: 90px;}
+    #h{position: absolute;right: 1530px; }
+    .gasnoble{background-color: gray; width: 90px; height: 90px;}
+    #he{position: absolute; right: 9px;}
+    .metales{background-color: yellow; width: 90px; height: 90px;}
+    .nometal{background-color: yellowgreen; width: 90px; height: 90px;}
+    .metaloide{background-color: purple; width: 90px;height: 90px;}
+   #li{position: absolute; top: 172px; right: 1530px;}
+   #be{position: absolute; top: 172px; right: 1440px;}
+   #b{position: absolute; top: 172px; right: 453px;}
+   #ne{position: absolute;top: 172px; right: 9px;}
+   #f{position: absolute; top: 172px; right: 98px;}
+   #o{position: absolute; top: 172px; right: 186px;}
+   #n{position: absolute; top: 172px; right: 275px;}
+   #c{position: absolute; top: 172px; right: 364px;}
+   #ar{position: absolute; top: 262px; right: 9px;}
+   #cl{position: absolute; top: 262px; right: 98px;}
+   #s{position: absolute; top: 262px; right: 186px;}
+   #p{position: absolute; top: 262px; right: 275px;}
+   #si{position: absolute; top: 262px; right: 364px;}
+   #al{position: absolute; top: 262px; right: 453px;}
+   #mg{position: absolute; top: 262px; right: 1440px;}
+   #na{position: absolute; top: 262px; right: 1530px;}
+   #kr{position: absolute; top: 352px; right: 9px;}
+   #br{position: absolute; top: 352px; right: 98px;}
+   #se{position: absolute; top: 352px; right: 186px;}
+   #as{position: absolute; top: 352px; right: 275px;}
+   #ge{position: absolute; top: 352px; right: 364px;}
+   #ga{position: absolute; top: 352px; right: 453px;}
+   #zn{position: absolute; top: 352px; right: 542px;}
+   #cu{position: absolute; top: 352px; right: 631px;}
+   #ni{position: absolute; top: 352px; right: 720px;}
+   #co{position: absolute; top: 352px; right: 810px;}
+   #fe{position: absolute; top: 352px; right: 900px;}
+   #mn{position: absolute; top: 352px; right:990px;}
+   #cr{position: absolute; top: 352px; right:1080px;}
+   #v{position: absolute; top: 352px; right: 1170px;}
+   #ti{position: absolute; top: 352px; right:1260px;}
+   #sc{position: absolute; top: 352px; right:1350px;}
+   #ca{position: absolute; top: 352px; right:1440px;}
+   #k{position: absolute; top: 352px; right: 1530px;}
+   #xe{position: absolute; top: 442px; right: 9px;}
+   #i{position: absolute; top: 442px; right: 98px;}
+   #te{position: absolute; top: 442px; right: 186px;}
+   #sb{position: absolute; top: 442px; right: 275px;}
+   #sn{position: absolute; top: 442px; right: 364px;}
+   #in{position: absolute; top: 442px; right: 453px;}
+   #cd{position: absolute; top: 442px; right: 542px;}
+   #ag{position: absolute; top: 442px; right: 631px;}
+   #pd{position: absolute; top: 442px; right: 720px;}
+   #rh{position: absolute; top: 442px; right: 810px;}
+   #ru{position: absolute; top: 442px; right: 900px;}
+   #tc{position: absolute; top: 442px; right:990px;}
+   #mo{position: absolute; top: 442px; right:1080px;}
+   #nb{position: absolute; top: 442px; right: 1170px;}
+   #zr{position: absolute; top: 442px; right:1260px;}
+   #y{position: absolute; top: 442px; right:1350px;}
+   #sr{position: absolute; top: 442px; right:1440px;}
+   #rb{position: absolute; top: 442px; right: 1530px;}
+   #rn{position: absolute; top: 532px; right: 9px;}
+   #at{position: absolute; top: 532px; right: 98px;}
+   #po{position: absolute; top: 532px; right: 186px;}
+   #bi{position: absolute; top: 532px; right: 275px;}
+   #pb{position: absolute; top: 532px; right: 364px;}
+   #tl{position: absolute; top: 532px; right: 453px;}
+   #hg{position: absolute; top: 532px; right: 542px;}
+   #au{position: absolute; top: 532px; right: 631px;}
+   #pt{position: absolute; top: 532px; right: 720px;}
+   #ir{position: absolute; top: 532px; right: 810px;}
+   #os{position: absolute; top: 532px; right: 900px;}
+   #re{position: absolute; top: 532px; right:990px;}
+   #w{position: absolute; top: 532px; right:1080px;}
+   #ta{position: absolute; top: 532px; right: 1170px;}
+   #hf{position: absolute; top: 532px; right:1260px;}
+   #la-lu{position: absolute; top: 532px; right:1350px;}
+   #ba{position: absolute; top: 532px; right:1440px;}
+   #cs{position: absolute; top: 532px; right: 1530px;}
+   #og{position: absolute; top: 622px; right: 9px;}
+   #ts{position: absolute; top: 622px; right: 98px;}
+   #lv{position: absolute; top: 622px; right: 186px;}
+   #mc{position: absolute; top: 622px; right: 275px;}
+   #fl{position: absolute; top: 622px; right: 364px;}
+   #nh{position: absolute; top: 622px; right: 453px;}
+   #cn{position: absolute; top: 622px; right: 542px;}
+   #rg{position: absolute; top: 622px; right: 631px;}
+   #ds{position: absolute; top: 622px; right: 720px;}
+   #mt{position: absolute; top: 622px; right: 810px;}
+   #hs{position: absolute; top: 622px; right: 900px;}
+   #bh{position: absolute; top: 622px; right: 990px;}
+   #sg{position: absolute; top: 622px; right:1080px;}
+   #db{position: absolute; top: 622px; right:1170px;}
+   #rf{position: absolute; top: 622px; right:1260px;}
+   #ac-lr{position: absolute; top: 622px; right:1350px;}
+   #ra{position: absolute; top: 622px; right:1440px;}
+   #fr{position: absolute; top: 622px; right:1530px;}
+   #lu{position: absolute; top: 802px; right: 9px;}
+   #yb{position: absolute; top: 802px; right: 98px;}
+   #tm{position: absolute; top: 802px; right: 186px;}
+   #er{position: absolute; top: 802px; right: 275px;}
+   #ho{position: absolute; top: 802px; right: 364px;}
+   #dy{position: absolute; top: 802px; right: 453px;}
+   #tb{position: absolute; top: 802px; right: 542px;}
+   #gd{position: absolute; top: 802px; right: 631px;}
+   #eu{position: absolute; top: 802px; right: 720px;}
+   #sm{position: absolute; top: 802px; right: 810px;}
+   #pm{position: absolute; top: 802px; right: 900px;}
+   #nd{position: absolute; top: 802px; right: 990px;}
+   #pr{position: absolute; top: 802px; right:1080px;}
+   #ce{position: absolute; top: 802px; right:1170px;}
+   #la{position: absolute; top: 802px; right:1260px;}
+   #lr{position: absolute; top: 892px; right: 9px;}
+   #no{position: absolute; top: 892px; right: 98px;}
+   #md{position: absolute; top: 892px; right: 186px;}
+   #fm{position: absolute; top: 892px; right: 275px;}
+   #es{position: absolute; top: 892px; right: 364px;}
+   #cf{position: absolute; top: 892px; right: 453px;}
+   #bk{position: absolute; top: 892px; right: 542px;}
+   #cm{position: absolute; top: 892px; right: 631px;}
+   #am{position: absolute; top: 892px; right: 720px;}
+   #pu{position: absolute; top: 892px; right: 810px;}
+   #np{position: absolute; top: 892px; right: 900px;}
+   #u{position: absolute; top:  892px; right: 990px;}
+   #pa{position: absolute; top: 892px; right:1080px;}
+   #th{position: absolute; top: 892px; right:1170px;}
+   #ac{position: absolute; top: 892px; right:1260px;}
+   
+   
+
+    </style>
+
+</head>
+<body style="background-color:darkkhaki;"  >
+    <h1>TABLA PERIODICA</h1>
+
+    <button class="sinclasificacion" id="h" type="button" onclick="alert ('Numero atomico:1  Masa atomica: 1.00794 u')" >
+    <h1>H</h1>
+    <p>Hidrògeno</p>
+    </button>
+    <button class="gasnoble" id="he" type="button" onclick="alert('Numero atomico:2  Masa atomica: 4.002602 u')">
+    <h1>He</h1>
+    <p>Helio</p>
+    </button>
+    <button class="metales" id="li" type="button" onclick="alert ('Numero atomico:3  Masa atomica: 6.941 u')" >
+    <h1>Li</h1>
+    <p>Litio</p>
+    </button>
+    <button class="metales" id="be" type="button" onclick="alert ('Numero atomico:4 Masa atomica:9.012182 u')" >
+    <h1>Be</h1>
+    <p>Berilio</p>
+    </button>
+    <button class="metaloide" id="b" type="button" onclick="alert ('Numero atomico:5  Masa atomica:10.811 u')" >
+    <h1>B</h1>
+    <p>Boro</p>
+    </button>
+    <button class="gasnoble" id="ne" type="button" onclick="alert('Numero atomico:10  Masa atomica:20.1797 u')">
+    <h1>Ne</h1>
+    <p>Neon</p>
+    </button>
+    <button class="nometal" id="f" type="button" onclick="alert('Numero atomico:9  Masa atomica:18.998403 u')">
+    <h1>F</h1>
+    <p>Fluor</p>
+    </button>
+    <button class="nometal" id="o" type="button" onclick="alert('Numero atomico:8  Masa atomica:15.9994 u')">
+    <h1>O</h1>
+    <p>Oxigeno</p>
+    </button>
+    <button class="nometal" id="n" type="button" onclick="alert('Numero atomico:7  Masa atomica:14.0067 u')">
+    <h1>N</h1>
+    <p>Nitrogeno</p>
+    </button>
+    <button class="nometal" id="c" type="button" onclick="alert('Numero atomico:6  Masa atomica:12.0107 u')">
+    <h1>C</h1>
+    <p>Carbono</p>
+    </button>
+    <button class="gasnoble" id="ar" type="button" onclick="alert('Numero atomico:18  Masa atomica:39.948 u')">
+    <h1>Ar</h1>
+    <p>Argon</p>
+    </button>
+    <button class="nometal" id="cl" type="button" onclick="alert('Numero atomico:17  Masa atomica:35.453 u')">
+    <h1>Cl</h1>
+    <p>Cloro</p>
+    </button>
+    <button class="nometal" id="s" type="button" onclick="alert('Numero atomico:16  Masa atomica:32.0605 u')">
+    <h1>S</h1>
+    <p>Azufre</p>
+    </button>
+    <button class="nometal" id="p" type="button" onclick="alert('Numero atomico:15  Masa atomica:30.97376 u')">
+    <h1>P</h1>
+    <p>Fosforo</p>
+    </button>
+    <button class="metaloide" id="si" type="button" onclick="alert ('Numero atomico:14  Masa atomica:28.0855 u')" >
+    <h1>Si</h1>
+    <p>Silicio</p>
+    </button>
+    <button class="metales" id="al" type="button" onclick="alert ('Numero atomico:13  Masa atomica:26.98153 u')" >
+    <h1>Al</h1>
+    <p>Aluminio</p>
+    </button>
+    <button class="gasnoble" id="kr" type="button" onclick="alert('Numero atomico:36  Masa atomica:83.798 u')">
+    <h1>Kr</h1>
+    <p>Cripton</p>
+    </button>
+    <button class="nometal" id="br" type="button" onclick="alert('Numero atomico:35  Masa atomica:79.904 u')">
+    <h1>Br</h1>
+    <p>Bromo</p>
+    </button>
+    <button class="nometal" id="se" type="button" onclick="alert('Numero atomico:34  Masa atomica:78.96 u')">
+    <h1>Se</h1>
+    <p>Selenio</p>
+    </button>
+    <button class="metaloide" id="as" type="button" onclick="alert ('Numero atomico:33  Masa atomica:74.9216 u')" >
+    <h1>As</h1>
+    <p>Arsenico</p>
+    </button>
+    <button class="metaloide" id="ge" type="button" onclick="alert ('Numero atomico:32  Masa atomica:72.61 u')" >
+    <h1>Ge</h1>
+    <p>Germanio</p>
+    </button>
+    <button class="metales" id="ga" type="button" onclick="alert ('Numero atomico:31  Masa atomica:69.723 u')" >
+    <h1>Ga</h1>
+    <p>Galio</p>
+    </button>
+    <button class="metales" id="zn" type="button" onclick="alert ('Numero atomico:30  Masa atomica:65.409 u')" >
+    <h1>Zn</h1>
+    <p>Zinc</p>
+    </button>
+    <button class="metales" id="cu" type="button" onclick="alert ('Numero atomico:29  Masa atomica:63.546 u')" >
+    <h1>Cu</h1>
+    <p>Cobre</p>
+    </button>
+    <button class="metales" id="ni" type="button" onclick="alert ('Numero atomico:28  Masa atomica:58.6934 u')" >
+    <h1>Ni</h1>
+    <p>Niquel</p>
+    </button>
+    <button class="metales" id="co" type="button" onclick="alert ('Numero atomico:27  Masa atomica:58.9332 u')" >
+    <h1>Co</h1>
+    <p>Cobalto</p>
+    </button>
+    <button class="metales" id="fe" type="button" onclick="alert ('Numero atomico:26  Masa atomica:55.845 u')" >
+    <h1>fe</h1>
+    <p>Hierro</p>
+    </button>
+    <button class="metales" id="mn" type="button" onclick="alert ('Numero atomico:25  Masa atomica:54.93804 u')" >
+    <h1>Mn</h1>
+    <p>Manganeso</p>
+    </button>
+    <button class="metales" id="cr" type="button" onclick="alert ('Numero atomico:24  Masa atomica:51.9961 u')" >
+    <h1>Cr</h1>
+    <p>Cromo</p>
+    </button>
+    <button class="metales" id="v" type="button" onclick="alert ('Numero atomico:23  Masa atomica:50.9415 u')" >
+    <h1>V</h1>
+    <p>Vanadio</p>
+    </button>
+    <button class="metales" id="ti" type="button" onclick="alert ('Numero atomico:22  Masa atomica:47.867 u')" >
+    <h1>Ti</h1>
+    <p>Titanio</p>
+    </button>
+    <button class="metales" id="sc" type="button" onclick="alert ('Numero atomico:21  Masa atomica:44.95591 u')" >
+    <h1>Sc</h1>
+    <p>Escandio</p>
+    </button>
+    <button class="metales" id="ca" type="button" onclick="alert ('Numero atomico:20  Masa atomica:40.078 u')" >
+    <h1>Ca</h1>
+    <p>Calcio</p>
+    </button>
+    <button class="metales" id="k" type="button" onclick="alert ('Numero atomico:19  Masa atomica:39.0983 u')" >
+    <h1>K</h1>
+    <p>Potasio</p>
+    </button>
+    <button class="metales" id="mg" type="button" onclick="alert ('Numero atomico:12  Masa atomica:24.305 u')" >
+    <h1>Mg</h1>
+    <p>Magnesio</p>
+    </button>
+    <button class="metales" id="na" type="button" onclick="alert ('Numero atomico:11  Masa atomica:22.98977 u')" >
+    <h1>Na</h1>
+    <p>Sodio</p>
+    </button>
+    <button class="gasnoble" id="xe" type="button" onclick="alert('Numero atomico:54  Masa atomica:131.293 u')">
+    <h1>Xe</h1>
+    <p>Xenon</p>
+    </button>
+    <button class="nometal" id="i" type="button" onclick="alert('Numero atomico:53  Masa atomica:126.9044 u')">
+    <h1>I</h1>
+    <p>Yodo</p>
+    </button>
+    <button class="metaloide" id="te" type="button" onclick="alert ('Numero atomico:52  Masa atomica:127.60 u')" >
+    <h1>Te</h1>
+    <p>Telurio</p>
+    </button>
+    <button class="metaloide" id="sb" type="button" onclick="alert ('Numero atomico:51  Masa atomica:121.76 u')" >
+    <h1>Sb</h1>
+    <p>Antimonio</p>
+    </button>
+    <button class="metales" id="sn" type="button" onclick="alert ('Numero atomico:50  Masa atomica:118.71 u')" >
+    <h1>sn</h1>
+    <p>Estaño</p>
+    </button>
+    <button class="metales" id="in" type="button" onclick="alert ('Numero atomico:49  Masa atomica:114.818 u')" >
+    <h1>In</h1>
+    <p>Indio</p>
+    </button>
+    <button class="metales" id="cd" type="button" onclick="alert ('Numero atomico:48  Masa atomica:112.411 u')" >
+    <h1>Cd</h1>
+    <p>Cadmio</p>
+    </button>
+    <button class="metales" id="ag" type="button" onclick="alert ('Numero atomico:47  Masa atomica:107.8682 u')" >
+    <h1>Ag</h1>
+    <p>Plata</p>
+    </button>
+    <button class="metales" id="pd" type="button" onclick="alert ('Numero atomico:46  Masa atomica:106.42 u')" >
+    <h1>Pd</h1>
+    <p>Paladio</p>
+    </button>
+    <button class="metales" id="rh" type="button" onclick="alert ('Numero atomico:45  Masa atomica:102.9055 u')" >
+    <h1>Rh</h1>
+    <p>Rodio</p>
+    </button>
+    <button class="metales" id="ru" type="button" onclick="alert ('Numero atomico:44  Masa atomica:101.07 u')" >
+    <h1>Ru</h1>
+    <p>Rutenio</p>
+    </button>
+    <button class="metales" id="tc" type="button" onclick="alert ('Numero atomico:43  Masa atomica:97.9072 u')" >
+    <h1>Tc</h1>
+    <p>Tecnecio</p>
+    </button>
+    <button class="metales" id="mo" type="button" onclick="alert ('Numero atomico:42  Masa atomica:95.94 u')" >
+    <h1>Mo</h1>
+    <p>Molibdeno</p>
+    </button>
+    <button class="metales" id="nb" type="button" onclick="alert ('Numero atomico:41  Masa atomica:92.90638 u')" >
+    <h1>Nb</h1>
+    <p>Niobio</p>
+    </button>
+    <button class="metales" id="zr" type="button" onclick="alert ('Numero atomico:40  Masa atomica:91.224 u')" >
+    <h1>Zr</h1>
+    <p>Zirconio</p>
+    </button>
+    <button class="metales" id="y" type="button" onclick="alert ('Numero atomico:39  Masa atomica:89.90585 u')" >
+    <h1>Y</h1>
+    <p>Itrio</p>
+    </button>
+    <button class="metales" id="sr" type="button" onclick="alert ('Numero atomico:38  Masa atomica:87.62 u')" >
+    <h1>Sr</h1>
+    <p>Stroncio</p>
+    </button>
+    <button class="metales" id="rb" type="button" onclick="alert ('Numero atomico:37  Masa atomica:85.4678 u')" >
+    <h1>Rb</h1>
+    <p>Rubidio</p>
+    </button>
+    <button class="gasnoble" id="rn" type="button" onclick="alert ('Numero atomico:86  Masa atomica:222.0176 u')" >
+    <h1>Rn</h1>
+    <p>Radon</p>
+    </button>
+    <button class="nometal" id="at" type="button" onclick="alert ('Numero atomico:85  Masa atomica:209.9871 u')" >
+    <h1>At</h1>
+    <p>Astato</p>
+    </button>
+    <button class="metales" id="po" type="button" onclick="alert ('Numero atomico:84  Masa atomica:208.9824 u')" >
+    <h1>Po</h1>
+    <p>Polonio</p>
+    </button>
+    <button class="metales" id="bi" type="button" onclick="alert ('Numero atomico:83  Masa atomica:208.98038 u')" >
+    <h1>Bi</h1>
+    <p>Bismuto</p>
+    </button>
+    <button class="metales" id="pb" type="button" onclick="alert ('Numero atomico:82  Masa atomica:207.2 u')" >
+    <h1>Pb</h1>
+    <p>Plomo</p>
+    </button>
+    <button class="metales" id="tl" type="button" onclick="alert ('Numero atomico:81  Masa atomica:204.3833 u')" >
+    <h1>Tl</h1>
+    <p>Talio</p>
+    </button>
+    <button class="metales" id="hg" type="button" onclick="alert ('Numero atomico:80  Masa atomica:200.59 u')" >
+    <h1>Hg</h1>
+    <p>Mercurio</p>
+    </button>
+    <button class="metales" id="au" type="button" onclick="alert ('Numero atomico:79  Masa atomica:196.9665 u')" >
+    <h1>Au</h1>
+    <p>Oro</p>
+    </button>
+    <button class="metales" id="pt" type="button" onclick="alert ('Numero atomico:78  Masa atomica:195.078 u')" >
+    <h1>Pt</h1>
+    <p>Platino</p>
+    </button>
+    <button class="metales" id="ir" type="button" onclick="alert ('Numero atomico:77  Masa atomica:192.217 u')" >
+    <h1>Ir</h1>
+    <p>Iridio</p>
+    </button>
+    <button class="metales" id="os" type="button" onclick="alert ('Numero atomico:76  Masa atomica:190.23 u')" >
+    <h1>Os</h1>
+    <p>Osmio</p>
+    </button>
+    <button class="metales" id="re" type="button" onclick="alert ('Numero atomico:75  Masa atomica:186.207 u')" >
+    <h1>Re</h1>
+    <p>Renio</p>
+    </button>
+    <button class="metales" id="w" type="button" onclick="alert ('Numero atomico:74  Masa atomica:183.84 u')" >
+    <h1>W</h1>
+    <p>Tungsteno</p>
+    </button>
+    <button class="metales" id="ta" type="button" onclick="alert ('Numero atomico:73  Masa atomica:180.9479 u')" >
+    <h1>Ta</h1>
+    <p>Tantalio</p>
+    </button>
+    <button class="metales" id="hf" type="button" onclick="alert ('Numero atomico:72  Masa atomica:178.49 u')" >
+    <h1>Hf</h1>
+    <p>hafnio</p>
+    </button>
+    <button class="metales" id="la-lu" type="button" onclick="alert ('Numero atomico:57-71 ')" >
+    <h1>La-Lu</h1>
+    <p></p>
+    </button>
+    <button class="metales" id="ba" type="button" onclick="alert ('Numero atomico:56  Masa atomica:137.327 u')" >
+    <h1>Ba</h1>
+    <p>Bario</p>
+    </button>
+    <button class="metales" id="cs" type="button" onclick="alert ('Numero atomico:55  Masa atomica:132.9054 u')" >
+    <h1>Cs</h1>
+    <p>Cesio</p>
+    </button>
+    <button class="metales" id="og" type="button" onclick="alert ('Numero atomico:118  Masa atomica:294 u')" >
+    <h1>Og</h1>
+    <p>Oganeson</p>
+    </button>
+    <button class="metales" id="ts" type="button" onclick="alert ('Numero atomico:117  Masa atomica:294 u')" >
+    <h1>Ts</h1>
+    <p>Teneso</p>
+    </button>
+    <button class="metales" id="lv" type="button" onclick="alert ('Numero atomico:116  Masa atomica:293 u')" >
+    <h1>Lv</h1>
+    <p>Livermorio</p>
+    </button>
+    <button class="metales" id="mc" type="button" onclick="alert ('Numero atomico:115  Masa atomica:289 u')" >
+    <h1>Mc</h1>
+    <p>Moscovio</p>
+    </button>
+    <button class="metales" id="fl" type="button" onclick="alert ('Numero atomico:114  Masa atomica:289 u')" >
+    <h1>Fl</h1>
+    <p>Flerovio</p>
+    </button>
+    <button class="metales" id="nh" type="button" onclick="alert ('Numero atomico:113  Masa atomica:286 u')" >
+    <h1>Nh</h1>
+    <p>Nihonio</p>
+    </button>
+    <button class="metales" id="cn" type="button" onclick="alert ('Numero atomico:112  Masa atomica:285 u')" >
+    <h1>Cn</h1>
+    <p>Copernicio</p>
+    </button>
+    <button class="metales" id="rg" type="button" onclick="alert ('Numero atomico:111  Masa atomica:280 u')" >
+    <h1>Rg</h1>
+    <p>Roentgenio</p>
+    </button>
+    <button class="metales" id="ds" type="button" onclick="alert ('Numero atomico:110  Masa atomica:281 u')" >
+    <h1>Ds</h1>
+    <p>Darmstadio</p>
+    </button>
+    <button class="metales" id="mt" type="button" onclick="alert ('Numero atomico:109  Masa atomica:268.1388 u')" >
+    <h1>Mt</h1>
+    <p>Meitnerio</p>
+    </button>
+    <button class="metales" id="hs" type="button" onclick="alert ('Numero atomico:108  Masa atomica:277 u')" >
+    <h1>Hs</h1>
+    <p>Hassio</p>
+    </button>
+    <button class="metales" id="bh" type="button" onclick="alert ('Numero atomico:107  Masa atomica:264.12 u')" >
+    <h1>bh</h1>
+    <p>Bohrio</p>
+    </button>
+    <button class="metales" id="sg" type="button" onclick="alert ('Numero atomico:106  Masa atomica:266.1219 u')" >
+    <h1>Sg</h1>
+    <p>Seaborgio</p>
+    </button>
+    <button class="metales" id="db" type="button" onclick="alert ('Numero atomico:105  Masa atomica:262.1141 u')" >
+    <h1>Db</h1>
+    <p>Dubnio</p>
+    </button>
+    <button class="metales" id="rf" type="button" onclick="alert ('Numero atomico:104  Masa atomica:261.1088 u')" >
+    <h1>Rf</h1>
+    <p>Rutherfordio</p>
+    </button>
+    <button class="metales" id="ac-lr" type="button" onclick="alert ('Numero atomico:89-103')" >
+    <h1>Ac-Lr</h1>
+    <p></p>
+    </button>
+    <button class="metales" id="ra" type="button" onclick="alert ('Numero atomico:88  Masa atomica:226 u')" >
+    <h1>Ra</h1>
+    <p>Radio</p>
+    </button>
+    <button class="metales" id="fr" type="button" onclick="alert ('Numero atomico:87  Masa atomica:223 u')" >
+    <h1>Fr</h1>
+    <p>Francio</p>
+    </button>
+    <button class="metales" id="lu" type="button" onclick="alert ('Numero atomico:71  Masa atomica:174.967 u')" >
+    <h1>Lu</h1>
+    <p>Lutecio</p>
+    </button>
+    <button class="metales" id="yb" type="button" onclick="alert ('Numero atomico:70  Masa atomica:173.04 u')" >
+    <h1>Yb</h1>
+    <p>Iterbio</p>
+    </button>
+    <button class="metales" id="tm" type="button" onclick="alert ('Numero atomico:69  Masa atomica:168.9342 u')" >
+    <h1>Tm</h1>
+    <p>Tulio</p>
+    </button>
+    <button class="metales" id="er" type="button" onclick="alert ('Numero atomico:68  Masa atomica:167.259 u')" >
+    <h1>Er</h1>
+    <p>Erbio</p>
+    </button>
+    <button class="metales" id="ho" type="button" onclick="alert ('Numero atomico:67  Masa atomica:164.9303 u')" >
+    <h1>Ho</h1>
+    <p>Holmio</p>
+    </button>
+    <button class="metales" id="dy" type="button" onclick="alert ('Numero atomico:66  Masa atomica:162.50 u')" >
+    <h1>Dy</h1>
+    <p>Diprosio</p>
+    </button>
+    <button class="metales" id="tb" type="button" onclick="alert ('Numero atomico:65  Masa atomica:158.9253 u')" >
+    <h1>Tb</h1>
+    <p>Terbio</p>
+    </button>
+    <button class="metales" id="gd" type="button" onclick="alert ('Numero atomico:64  Masa atomica:157.25 u')" >
+    <h1>Gd</h1>
+    <p>Dadolino</p>
+    </button>
+    <button class="metales" id="eu" type="button" onclick="alert ('Numero atomico:63  Masa atomica:151.964 u')" >
+    <h1>Eu</h1>
+    <p>Europio</p>
+    </button>
+    <button class="metales" id="sm" type="button" onclick="alert ('Numero atomico:62  Masa atomica:150.36 u')" >
+    <h1>Fr</h1>
+    <p>Francio</p>
+    </button>
+    <button class="metales" id="pm" type="button" onclick="alert ('Numero atomico:61  Masa atomica:144.9127 u')" >
+    <h1>Pm</h1>
+    <p>Prometio</p>
+    </button>
+    <button class="metales" id="nd" type="button" onclick="alert ('Numero atomico:60  Masa atomica:144.24 u')" >
+    <h1>Nd</h1>
+    <p>Neodimio</p>
+    </button>
+    <button class="metales" id="pr" type="button" onclick="alert ('Numero atomico:59  Masa atomica:140.9076 u')" >
+    <h1>Pr</h1>
+    <p>Praseodimio</p>
+    </button>
+    <button class="metales" id="ce" type="button" onclick="alert ('Numero atomico:58  Masa atomica:140.116 u')" >
+    <h1>Ce</h1>
+    <p>Cerio</p>
+    </button>
+    <button class="metales" id="la" type="button" onclick="alert ('Numero atomico:57  Masa atomica:138.9055 u')" >
+    <h1>La</h1>
+    <p>Lantano</p>
+    </button>
+    <button class="metales" id="lr" type="button" onclick="alert ('Numero atomico:103  Masa atomica:262.1097 u')" >
+    <h1>Lr</h1>
+    <p>Laurencio</p>
+    </button>
+    <button class="metales" id="no" type="button" onclick="alert ('Numero atomico:102  Masa atomica:259.1010 u')" >
+    <h1>No</h1>
+    <p>Nobelio</p>
+    </button>
+    <button class="metales" id="md" type="button" onclick="alert ('Numero atomico:101  Masa atomica:258.0984 u')" >
+    <h1>Md</h1>
+    <p>Mendelevio</p>
+    </button>
+    <button class="metales" id="fm" type="button" onclick="alert ('Numero atomico:100  Masa atomica:257.0951 u')" >
+    <h1>Fm</h1>
+    <p>Fermio</p>
+    </button>
+    <button class="metales" id="es" type="button" onclick="alert ('Numero atomico:99  Masa atomica:252.0830 u')" >
+    <h1>Es</h1>
+    <p>Einstenio</p>
+    </button>
+    <button class="metales" id="cf" type="button" onclick="alert ('Numero atomico:98  Masa atomica:251.0796 u')" >
+    <h1>Cf</h1>
+    <p>Californio</p>
+    </button>
+    <button class="metales" id="bk" type="button" onclick="alert ('Numero atomico:97  Masa atomica:247.0703 u')" >
+    <h1>Bk</h1>
+    <p>Berquelio</p>
+    </button>
+    <button class="metales" id="cm" type="button" onclick="alert ('Numero atomico:96  Masa atomica:247.0704 u')" >
+    <h1>Cm</h1>
+    <p>Curio</p>
+    </button>
+    <button class="metales" id="am" type="button" onclick="alert ('Numero atomico:95  Masa atomica:243.0614 u')" >
+    <h1>Am</h1>
+    <p>Americio</p>
+    </button>
+    <button class="metales" id="pu" type="button" onclick="alert ('Numero atomico:94  Masa atomica:244.0642 u')" >
+    <h1>Pu</h1>
+    <p>Plutonio</p>
+    </button>
+    <button class="metales" id="np" type="button" onclick="alert ('Numero atomico:93  Masa atomica:237.0482 u')" >
+    <h1>Np</h1>
+    <p>Neptunio</p>
+    </button>
+    <button class="metales" id="u" type="button" onclick="alert ('Numero atomico:92  Masa atomica:238.0289 u')" >
+    <h1>U</h1>
+    <p>Uranio</p>
+    </button>
+    <button class="metales" id="pa" type="button" onclick="alert ('Numero atomico:91  Masa atomica:231.03588 u')" >
+    <h1>Pa</h1>
+    <p>Protactinio</p>
+    </button>
+    <button class="metales" id="th" type="button" onclick="alert ('Numero atomico:90  Masa atomica:232.0381 u')" >
+    <h1>Th</h1>
+    <p>Torio</p>
+    </button>
+    <button class="metales" id="ac" type="button" onclick="alert ('Numero atomico:89  Masa atomica:227.0277 u')" >
+    <h1>Ac</h1>
+    <p>Actinio</p>
+    </button>
+    
+    
+    
+</body>
+</html>
